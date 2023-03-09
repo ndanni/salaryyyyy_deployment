@@ -17,7 +17,7 @@ dataset['experience'].fillna(0, inplace=True)
 dataset['test_score'].fillna(dataset['test_score'].mean(), inplace=True)
 
 # now specify the Input features for training 
-X = dataset.iloc[:,0:3]
+X = dataset.iloc[:, :3]
 
 # Now some features are string/text, we need to convert them to number
 #Converting words to integer values
